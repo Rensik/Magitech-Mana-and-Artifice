@@ -1,0 +1,4 @@
+import crafttweaker.api.BracketHandlers;
+import crafttweaker.api.item.IIngredient;
+
+craftingTable.addShaped('sleeping_bag', BracketHandlers.getItem('comforts:sleeping_bag_white'), [[BracketHandlers.getItem('minecraft:air') as IIngredient, BracketHandlers.getItem('minecraft:air') as IIngredient, BracketHandlers.getItem('minecraft:air') as IIngredient], [BracketHandlers.getItem('minecraft:white_carpet') as IIngredient, BracketHandlers.getItem('minecraft:white_carpet') as IIngredient, BracketHandlers.getItem('minecraft:white_carpet') as IIngredient], [BracketHandlers.getItem('minecraft:air') as IIngredient, BracketHandlers.getItem('minecraft:air') as IIngredient, BracketHandlers.getItem('minecraft:air') as IIngredient]], null);

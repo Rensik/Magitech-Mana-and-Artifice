@@ -1,0 +1,39 @@
+{
+  "uuid": "7467b335-9f5a-4fa5-8f03-1ed6330ac676",
+  "username": "Rensik",
+  "data": {
+    "last_location": {
+      "x": -218.5,
+      "y": 70.0,
+      "z": -163.5,
+      "rotationYaw": -9.149999,
+      "rotationPitch": 21.15,
+      "world": {
+        "field_110626_a": "minecraft",
+        "field_110625_b": "dimension"
+      },
+      "dimension": {
+        "field_110626_a": "minecraft",
+        "field_110625_b": "overworld"
+      }
+    },
+    "last_death": 1601581006,
+    "death_count": 2,
+    "fly_enabled": false,
+    "god_enabled": false
+  },
+  "last_usage": {
+    "command": {
+      "back": 1601581014
+    },
+    "kit": {
+      "tools": 1601555426
+    },
+    "teleport": {
+      "back": 1601581017
+    },
+    "other": {}
+  },
+  "restrictions": {},
+  "custom_data": {}
+}

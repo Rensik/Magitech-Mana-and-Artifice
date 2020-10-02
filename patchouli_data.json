@@ -1,0 +1,42 @@
+{
+  "bookGuiScale": 3,
+  "clickedVisualize": false,
+  "bookData": {
+    "flux:book": {
+      "viewedEntries": [
+        "flux:processing/alloy_caster",
+        "flux:energy/energy_cable",
+        "flux:energy/fluxgen",
+        "flux:machines/digger",
+        "flux:machines/butcher",
+        "flux:machines/mob_pounder",
+        "flux:machines/item_absorber",
+        "flux:processing/copier",
+        "flux:processing/grinding_mill",
+        "flux:processing/compactor",
+        "flux:processing/washer",
+        "flux:machines/farmer",
+        "flux:machines/online_market",
+        "flux:other/interactor_rail",
+        "flux:other/signal_controller"
+      ],
+      "bookmarks": [],
+      "history": [
+        "flux:machines/digger",
+        "flux:energy/fluxgen",
+        "flux:other/signal_controller",
+        "flux:other/interactor_rail",
+        "flux:machines/online_market",
+        "flux:machines/farmer",
+        "flux:processing/washer",
+        "flux:processing/compactor",
+        "flux:processing/grinding_mill",
+        "flux:processing/copier",
+        "flux:machines/item_absorber",
+        "flux:machines/butcher",
+        "flux:machines/mob_pounder"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}

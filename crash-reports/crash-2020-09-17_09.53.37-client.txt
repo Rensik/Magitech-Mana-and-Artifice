@@ -1,0 +1,143 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 9/17/20 9:53 AM
+Description: Initializing game
+
+org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:364) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:206) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTransformationHandler.processClass(MixinTransformationHandler.java:109) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	at org.spongepowered.asm.launch.MixinLaunchPlugin.processClass(MixinLaunchPlugin.java:135) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:154) ~[modlauncher-7.0.1.jar:7.0.1+78+master.e9771d8] {}
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:85) ~[modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:119) ~[modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader$DelegatedClassLoader.findClass(TransformingClassLoader.java:256) ~[modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:135) ~[modlauncher-7.0.1.jar:?] {re:classloading}
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:97) ~[modlauncher-7.0.1.jar:?] {re:classloading}
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_251] {}
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:464) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:149) ~[1.16.2.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_251] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_251] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_251] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:51) ~[forge-1.16.2-33.0.61.jar:33.0] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-7.0.1.jar:?] {}
+Caused by: org.spongepowered.asm.mixin.injection.throwables.InjectionError: Critical injection failure: Redirector cullParticles(Lnet/minecraft/client/particle/Particle;Lcom/mojang/blaze3d/vertex/IVertexBuilder;Lnet/minecraft/client/renderer/ActiveRenderInfo;F)V in cullparticles.mixins.json:MixinParticleManager failed injection check, (0/1) succeeded. Scanned 1 target(s). Using refmap cullparticles.refmap.json
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.postInject(InjectionInfo.java:400) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.applyInjections(MixinTargetContext.java:1280) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyInjections(MixinApplicatorStandard.java:1042) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:395) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:320) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:345) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:570) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:351) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	... 22 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:364) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:206) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTransformationHandler.processClass(MixinTransformationHandler.java:109) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	at org.spongepowered.asm.launch.MixinLaunchPlugin.processClass(MixinLaunchPlugin.java:135) ~[mixin-0.8.jar:0.8+unknown-b0.git-unknown] {}
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:154) ~[modlauncher-7.0.1.jar:7.0.1+78+master.e9771d8] {}
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:85) ~[modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:119) ~[modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader$DelegatedClassLoader.findClass(TransformingClassLoader.java:256) ~[modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:135) ~[modlauncher-7.0.1.jar:?] {re:classloading}
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:97) ~[modlauncher-7.0.1.jar:?] {re:classloading}
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_251] {}
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:464) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:149) ~[1.16.2.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_251] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_251] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_251] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:51) ~[forge-1.16.2-33.0.61.jar:33.0] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-7.0.1.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.2
+	Minecraft Version ID: 1.16.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_251, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 697181600 bytes (664 MB) / 1654128640 bytes (1577 MB) up to 3817865216 bytes (3641 MB)
+	CPUs: 4
+	JVM Flags: 5 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx4096m -Xms4096m -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms256m
+	ModLauncher: 7.0.1+78+master.e9771d8
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.jar mixin PLUGINSERVICE 
+		/eventbus-3.0.3-service.jar eventbus PLUGINSERVICE 
+		/forge-1.16.2-33.0.61.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.2-33.0.61.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.2.0-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.2-33.0.61.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.2-33.0.61.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.2-33.0.61.jar fml TRANSFORMATIONSERVICE 
+	FML: 33.0
+	Forge: net.minecraftforge:33.0.61
+	FML Language Providers: 
+		javafml@33.0
+		minecraft@1
+	Mod List: 
+		forge-1.16.2-33.0.61-client.jar Minecraft {minecraft@1.16.2 COMMON_SETUP}
+		ClientTweaks_1.16.2-5.1.1.jar Client Tweaks {clienttweaks@5.1.1 COMMON_SETUP}
+		AmbientSounds_v3.0.21_mc1.16.2.jar Ambient Sounds {ambientsounds@3.0.3 COMMON_SETUP}
+		Cucumber-1.16.2-4.1.1.jar Cucumber Library {cucumber@4.1.1 COMMON_SETUP}
+		beenfo-1.16.2-forge33.0.5-1.1.5.jar Beenfo {beenfo@1.16.2-forge33.0.5-1.1.5 COMMON_SETUP}
+		Autofish-0.9.0-forge-mc1.16.2.jar Autofish {autofish@0.9.0 COMMON_SETUP}
+		curios-forge-1.16.2-4.0.0.1.jar Curios API {curios@1.16.2-4.0.0.1 COMMON_SETUP}
+		automaticdoors_1.16.2-1.4.jar Automatic Doors {automaticdoors@1.4 COMMON_SETUP}
+		collective-1.16.2-1.39.jar Collective {collective@1.39 COMMON_SETUP}
+		Clumps-6.0.0.9.jar Clumps {clumps@6.0.0.9 COMMON_SETUP}
+		CTM-MC1.16.1-1.1.1.5.jar ConnectedTexturesMod {ctm@MC1.16.1-1.1.1.5 COMMON_SETUP}
+		Controlling-7.0.0.4.jar Controlling {controlling@7.0.0.4 COMMON_SETUP}
+		comforts-forge-1.16.2-4.0.0.0.jar Comforts {comforts@1.16.2-4.0.0.0 COMMON_SETUP}
+		blockcarpentry-1.16.2-0.2.2.jar BlockCarpentry {blockcarpentry@1.16.2-0.2.2 COMMON_SETUP}
+		beaconsforall-forge-1.16.2-5.0.0.0.jar Beacons For All {beaconsforall@1.16.2-5.0.0.0 COMMON_SETUP}
+		culinaryconstruct-forge-1.16.2-4.0.0.0.jar Culinary Construct {culinaryconstruct@1.16.2-4.0.0.0 COMMON_SETUP}
+		Auto-Smelting 1.0.jar Auto Smelting {autosmelting@1.0 COMMON_SETUP}
+		Actually.Useful.Smithing.Table-1.0.1.mc.1.16.2.jar Actually Useful Smithing Table {actuallyusefulsmithingtable@1.0.1 mc 1.16.2 COMMON_SETUP}
+		Actually Useful Stonecutter-1.0.2 mc 1.16.2.jar Actually Useful Stonecutter {actuallyusefulstonecutter@1.0.2 mc 1.16.2 COMMON_SETUP}
+		cloth-config-forge-4.1.0.jar Cloth Config v4 API {cloth-config@4.0 COMMON_SETUP}
+		BetterBurning-1.16.2-3.0.1.jar BetterBurning {betterburning@3.0.1 COMMON_SETUP}
+		forge-1.16.2-33.0.61-universal.jar Forge {forge@33.0.61 COMMON_SETUP}
+		AppleSkin-mc1.16.2-forge-1.0.14.jar AppleSkin {appleskin@1.0.14 COMMON_SETUP}
+		CraftingCraft_1.16.2-9.1.0.jar CraftingCraft {craftingcraft@9.1.0 COMMON_SETUP}
+		absentbydesign-1.16.2-1.1.0.jar Absent By Design Mod {absentbydesign@1.16.2-1.1.0 COMMON_SETUP}
+		CleanView-1.16.2-v1.jar CleanView {cleanview@1.16.2-v1 COMMON_SETUP}
+		conduitsprdrowned_1.16.2-1.1.jar Conduits Prevent Drowned {conduitsprdrowned@1.1 COMMON_SETUP}
+		CraftingTweaks_1.16.2-12.1.1.jar Crafting Tweaks {craftingtweaks@12.1.1 COMMON_SETUP}
+		cullparticles-2.0-1.16.2.jar Cull Particles {cullparticles@2.0-1.16.2 COMMON_SETUP}
+		BetterAdvancements-1.16.2-0.1.0.101.jar Better Advancements {betteradvancements@0.1.0.101 COMMON_SETUP}
+	Launched Version: 1.16.2
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: GeForce GTX 1050 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 419.17, NVIDIA Corporation
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	CPU: 4x Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz

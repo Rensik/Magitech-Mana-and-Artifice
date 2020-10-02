@@ -1,0 +1,149 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 9/9/20 8:49 PM
+Description: Mod loading error has occurred
+
+java.lang.Exception: Mod Loading has failed
+	at net.minecraftforge.fml.client.ClientModLoader.completeModLoading(ClientModLoader.java:202) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.lambda$null$1(Minecraft.java:494) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.util.Util.func_215077_a(SourceFile:404) ~[?:?] {re:classloading}
+	at net.minecraft.client.Minecraft.lambda$new$2(Minecraft.java:490) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.ResourceLoadProgressGui.func_230430_a_(ResourceLoadProgressGui.java:113) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.GameRenderer.func_195458_a(GameRenderer.java:480) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_195542_b(Minecraft.java:953) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:584) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:184) ~[1.16.2.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_251] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_251] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_251] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:51) ~[forge-1.16.2-33.0.37.jar:33.0] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-6.1.1.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-6.1.1.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-6.1.1.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-6.1.1.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-6.1.1.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+
+-- reap --
+Details:
+	Failure message: fml.modloading.failedtoloadmod
+	Exception message: java.util.ConcurrentModificationException
+	Mod Version: 1.16.2-1.0.1
+	Mod Issue URL: https://www.curseforge.com/minecraft/mc-mods/reap-mod/issues
+Stacktrace:
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at net.minecraftforge.eventbus.ListenerList$ListenerListInst.forceRebuild(ListenerList.java:228)
+	at net.minecraftforge.eventbus.ListenerList$ListenerListInst.register(ListenerList.java:266)
+	at net.minecraftforge.eventbus.ListenerList.register(ListenerList.java:125)
+	at net.minecraftforge.eventbus.EventBus.addToListeners(EventBus.java:264)
+	at net.minecraftforge.eventbus.EventBus.addListener(EventBus.java:239)
+	at net.minecraftforge.eventbus.EventBus.addListener(EventBus.java:231)
+	at net.minecraftforge.eventbus.EventBus.addListener(EventBus.java:186)
+	at net.minecraftforge.eventbus.EventBus.addListener(EventBus.java:180)
+	at net.minecraftforge.eventbus.EventBus.addListener(EventBus.java:174)
+	at de.maxhenkel.reap.corelib.CommonRegistry.registerConfig(CommonRegistry.java:123)
+	at de.maxhenkel.reap.Main.<init>(Main.java:21)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:81)
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$5(ModContainer.java:111)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.2
+	Minecraft Version ID: 1.16.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_251, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 709477432 bytes (676 MB) / 1689255936 bytes (1611 MB) up to 3817865216 bytes (3641 MB)
+	CPUs: 4
+	JVM Flags: 5 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx4096m -Xms4096m -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms256m
+	ModLauncher: 6.1.1+74+master.966c698
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.jar mixin PLUGINSERVICE 
+		/eventbus-3.0.3-service.jar eventbus PLUGINSERVICE 
+		/forge-1.16.2-33.0.37.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.2-33.0.37.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.2.0-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.2-33.0.37.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.2-33.0.37.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.2-33.0.37.jar fml TRANSFORMATIONSERVICE 
+	FML: 33.0
+	Forge: net.minecraftforge:33.0.37
+	FML Language Providers: 
+		javafml@33.0
+		minecraft@1
+	Mod List: 
+		lenientcreepers-1.16.2-v1.0.1.jar LenientCreepers {lenientcreepers@v1.0.1 CREATE_REGISTRIES}
+		ClientTweaks_1.16.2-5.1.1.jar Client Tweaks {clienttweaks@5.1.1 CREATE_REGISTRIES}
+		Cucumber-1.16.2-4.1.1.jar Cucumber Library {cucumber@4.1.1 CREATE_REGISTRIES}
+		jei-1.16.2-7.3.2.25.jar Just Enough Items {jei@7.3.2.25 CREATE_REGISTRIES}
+		mcw-windows-1.0.2-mc1.16.2.jar Macaw's Windows {mcwwindows@1.0.2 CREATE_REGISTRIES}
+		torohealth-1.16.2-forge-2.jar ToroHealth {torohealth@NONE CREATE_REGISTRIES}
+		reap-1.16.2-1.0.1.jar Reap Mod {reap@1.16.2-1.0.1 ERROR}
+		KleeSlabs_1.16.2-9.1.0.jar KleeSlabs {kleeslabs@9.1.0 CREATE_REGISTRIES}
+		noautojump-1.16.2-1.jar No Auto-Jump {noautojump@1.16.2-1 CREATE_REGISTRIES}
+		invtweaks-1.16.2-1.0.0.jar Inventory Tweaks Renewed {invtweaks@1.16.2-1.0.0 CREATE_REGISTRIES}
+		BetterTitleScreen-1.16.2-1.10.1.jar Better Title Screen {bettertitlescreen@1.16.2-1.10.1 CREATE_REGISTRIES}
+		ReAuth-1.16-Forge-3.9.1.jar ReAuth {reauth@3.9.1 CREATE_REGISTRIES}
+		Placebo-1.16.2-4.2.0.jar Placebo {placebo@4.2.0 CREATE_REGISTRIES}
+		dankstorage-3.10c.jar Dank Storage {dankstorage@3.10c CREATE_REGISTRIES}
+		comforts-forge-1.16.2-4.0.0.0.jar Comforts {comforts@1.16.2-4.0.0.0 CREATE_REGISTRIES}
+		NoFog-1.16.2-Forge-b1.jar NoFog {nofog@1.0.1 CREATE_REGISTRIES}
+		NaturesCompass-1.16.2-1.8.5.jar Nature's Compass {naturescompass@1.16.2-1.8.5 CREATE_REGISTRIES}
+		ftb-gui-library-1.0.0.18.jar FTB GUI Library {ftbguilibrary@1.0.0.18 CREATE_REGISTRIES}
+		culinaryconstruct-forge-1.16.2-4.0.0.0.jar Culinary Construct {culinaryconstruct@1.16.2-4.0.0.0 CREATE_REGISTRIES}
+		WitherSkeletonTweaks-1.16.2-5.1.0.jar Wither Skeleton Tweaks {wstweaks@5.1.0 CREATE_REGISTRIES}
+		mcw-doors-1.0.0-mc1.16.2.jar Macaw's Doors {mcwdoors@1.0.0 CREATE_REGISTRIES}
+		environmentalcreepers-forge-1.16.2-1.6.0.jar Environmental Creepers {environmentalcreepers@1.6.0 CREATE_REGISTRIES}
+		Ma-Essentials-1.16.2-3.3.0.jar Ma Essentials {maessentials@1.16.2-3.3.0 CREATE_REGISTRIES}
+		ftb-teams-1.0.1.12.jar FTB Teams {ftbteams@1.0.1.12 CREATE_REGISTRIES}
+		ftb-chunks-1.1.1.32.jar FTB Chunks {ftbchunks@1.1.1.32 CREATE_REGISTRIES}
+		forge-1.16.2-33.0.37-universal.jar Forge {forge@33.0.37 CREATE_REGISTRIES}
+		CraftingTweaks_1.16.2-12.1.1.jar Crafting Tweaks {craftingtweaks@12.1.1 CREATE_REGISTRIES}
+		forge-1.16.2-33.0.37-client.jar Minecraft {minecraft@1.16.2 CREATE_REGISTRIES}
+		torchmaster-2.3.3-alpha.jar Torchmaster {torchmaster@2.3.3-alpha CREATE_REGISTRIES}
+		theoneprobe-1.16-3.0.4-beta.jar The One Probe {theoneprobe@1.16-3.0.4-beta CREATE_REGISTRIES}
+		AmbientSounds_v3.0.21_mc1.16.2.jar Ambient Sounds {ambientsounds@3.0.3 CREATE_REGISTRIES}
+		MouseTweaks-2.13-mc1.16.2.jar Mouse Tweaks {mousetweaks@2.13 CREATE_REGISTRIES}
+		Ping-1.16.2-1.6.6.jar Ping {ping@1.16.2-1.6.6 CREATE_REGISTRIES}
+		manaandartifice-1.0.6-pre9.jar Mana and Artifice {mana-and-artifice@1.0.6-pre9 CREATE_REGISTRIES}
+		valkyrielib-1.16.2-3.0.3.1.jar ValkyrieLib {valkyrielib@1.16.2-3.0.3.1 CREATE_REGISTRIES}
+		enviromats-1.16.2-2.0.3.0.jar Environmental Materials {enviromats@1.16.2-2.0.3.0 CREATE_REGISTRIES}
+		mcw-trapdors-1.0.0fix-mc1.16.2.jar Macaw's Trapdoors {mcwtrpdoors@1.0.0 CREATE_REGISTRIES}
+		ShulkerTooltip-1.9.3.jar Shulker Tooltip {shulkertooltip@1.9.3 CREATE_REGISTRIES}
+		gravestone-1.16.2-1.0.6.jar Gravestone Mod {gravestone@1.16.2-1.0.6 CREATE_REGISTRIES}
+		ftb-backups-2.1.1.6.jar FTB Backups {ftbbackups@2.1.1.6 CREATE_REGISTRIES}
+		ftb-ultimine-1.1.0.10.jar FTB Ultimine {ftbultimine@1.1.0.10 CREATE_REGISTRIES}
+		AmbientEnvironment-4.0.0.2.jar Ambient Environment {ambientenvironment@4.0.0.2 CREATE_REGISTRIES}
+		fancymenu_1.4.6.1_MC_1.16.2.jar §dFancy§5Menu {fancymenu@1.4.6.1 CREATE_REGISTRIES}
+		PickleTweaks-1.16.2-5.1.1.jar Pickle Tweaks {pickletweaks@5.1.1 CREATE_REGISTRIES}
+		mcws-roofs-1.16.2-v2.0.0.jar Macaw's Roofs {mcwroofs@2.0.0 CREATE_REGISTRIES}
+		AppleSkin-mc1.16.2-forge-1.0.14.jar AppleSkin {appleskin@1.0.14 CREATE_REGISTRIES}
+		gjeb-1.16.2-1.1.1.8.jar GJEB (GammaJustExtremeBright) {gjeb@1.1.1.8 CREATE_REGISTRIES}
+		[1.16.2][Forge] RPG-HUD-3.8.2.jar RPG-Hud {rpg-hud@3.8.2 CREATE_REGISTRIES}
+		CleanView-1.16.2-v1.jar CleanView {cleanview@1.16.2-v1 CREATE_REGISTRIES}
+		SoundFilters-0.14_for_1.16.2.jar Sound Filters {soundfilters@0.14_for_1.16.2 CREATE_REGISTRIES}

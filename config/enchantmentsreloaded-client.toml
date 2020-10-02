@@ -1,0 +1,7 @@
+#What percent of durability should removing a curse use?
+curse_durability_factor = 0.33333334
+#When decreasing durability from removing curses, should we round the result of multiplication up?
+curse_durability_rounding_style = true
+#When using the transfer table, what should the chance the block will break increase by per use? (Capped at 1)
+transfer_use_break_chance = 0.02
+
