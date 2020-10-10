@@ -18,7 +18,7 @@ customization {
   orientation = mid-centered
   x = -50
   action = movebutton
-  y = -54
+  y = -31
 }
 
 customization {
@@ -33,7 +33,7 @@ customization {
   orientation = mid-centered
   x = -50
   action = movebutton
-  y = -77
+  y = -54
 }
 
 customization {
@@ -51,14 +51,14 @@ customization {
 customization {
   identifier = %id=5%
   orientation = mid-centered
-  x = -50
+  x = 2
   action = movebutton
   y = 38
 }
 
 customization {
   identifier = %id=5%
-  width = 100
+  width = 48
   action = resizebutton
   height = 20
 }
@@ -91,14 +91,20 @@ customization {
   orientation = mid-centered
   x = -50
   action = movebutton
-  y = 61
+  y = 38
 }
 
 customization {
   identifier = %id=9%
-  width = 100
+  width = 48
   action = resizebutton
   height = 20
+}
+
+customization {
+  identifier = %id=9%
+  action = setbuttonlabel
+  value = Quit
 }
 
 customization {
@@ -107,7 +113,7 @@ customization {
   x = -50
   width = 100
   action = addbutton
-  y = -31
+  y = -8
   label = Rent a Server
   value = https://bisecthosting.com/rensanity
   height = 20
@@ -120,7 +126,7 @@ customization {
   x = -50
   width = 100
   action = addbutton
-  y = -8
+  y = -77
   label = Patreon
   value = http://patreon.com/rensik
   height = 20
