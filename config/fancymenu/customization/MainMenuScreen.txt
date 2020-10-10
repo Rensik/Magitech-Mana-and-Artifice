@@ -6,110 +6,127 @@ customization-meta {
 }
 
 customization {
-  identifier = %id=604382%
-  orientation = bottom-right
-  x = -539
-  action = movebutton
-  y = -44
-}
-
-customization {
-  identifier = %id=400382%
+  identifier = %id=7%
   orientation = bottom-left
-  x = 0
+  x = 6
   action = movebutton
-  y = -20
+  y = -29
 }
 
 customization {
-  identifier = %id=502382%
-  orientation = top-right
-  x = -104
+  identifier = %id=3%
+  orientation = mid-centered
+  x = -50
   action = movebutton
-  y = 8
+  y = -31
 }
 
 customization {
-  identifier = %id=376382%
-  orientation = bottom-left
-  x = 101
-  action = movebutton
-  y = -20
+  identifier = %id=3%
+  width = 100
+  action = resizebutton
+  height = 20
 }
 
 customization {
-  identifier = %id=400346%
-  orientation = bottom-left
-  x = 0
+  identifier = %id=2%
+  orientation = mid-centered
+  x = -50
   action = movebutton
-  y = -44
+  y = -54
 }
 
 customization {
-  identifier = %id=502346%
+  identifier = %id=2%
+  width = 100
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=4%
   action = hidebutton
 }
 
 customization {
-  identifier = %id=400322%
-  orientation = mid-right
-  x = -100
+  identifier = %id=5%
+  orientation = mid-centered
+  x = 2
   action = movebutton
-  y = -1
+  y = 38
 }
 
 customization {
-  identifier = %id=400322%
+  identifier = %id=5%
+  width = 48
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=6%
+  orientation = bottom-left
+  x = 29
+  action = movebutton
+  y = -29
+}
+
+customization {
+  identifier = %id=8%
+  orientation = mid-centered
+  x = -50
+  action = movebutton
+  y = 15
+}
+
+customization {
+  identifier = %id=8%
   width = 100
   action = resizebutton
   height = 20
 }
 
 customization {
-  identifier = %id=400298%
-  orientation = mid-right
-  x = -100
+  identifier = %id=9%
+  orientation = mid-centered
+  x = -50
   action = movebutton
-  y = -25
+  y = 38
 }
 
 customization {
-  identifier = %id=400298%
-  width = 100
+  identifier = %id=9%
+  width = 48
   action = resizebutton
   height = 20
 }
 
 customization {
-  orientation = mid-right
+  identifier = %id=9%
+  action = setbuttonlabel
+  value = Quit
+}
+
+customization {
+  orientation = mid-centered
   buttonaction = openlink
-  x = -100
+  x = -50
   width = 100
   action = addbutton
-  y = 23
+  y = -8
   label = Rent a Server
   value = https://bisecthosting.com/rensanity
   height = 20
 }
 
 customization {
-  path = C:/Users/Rensik/Documents/BisectHosting Images/horizontal_light_text.png
-  orientation = top-left
-  x = 541
-  width = 98
-  action = addtexture
-  y = 221
-  height = 100
-}
-
-customization {
-  orientation = top-left
-  hoverlabel = 
+  orientation = mid-centered
+  hoverlabel = Patreon
   buttonaction = openlink
-  x = 540
+  x = -50
   width = 100
   action = addbutton
-  y = 126
+  y = -77
   label = Patreon
   value = http://patreon.com/rensik
   height = 20
