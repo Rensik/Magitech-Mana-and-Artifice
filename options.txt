@@ -23,7 +23,7 @@ fov:-0.2
 screenEffectScale:0.0
 fovEffectScale:0.0
 gamma:1.0
-renderDistance:12
+renderDistance:32
 entityDistanceScaling:1.0
 guiScale:3
 particles:0
@@ -104,7 +104,7 @@ key_key.ftbchunks.map:key.keyboard.m
 key_Reload Menu | CTRL + :key.keyboard.r
 key_Toggle Customization Overlay | CTRL + :key.keyboard.c
 key_key.reveal:key.keyboard.g
-key_key.showhide:key.keyboard.b
+key_key.showhide:key.keyboard.unknown
 key_key.gridhere:key.keyboard.c
 key_key.gridfixy:key.keyboard.y
 key_key.gridspawns:key.keyboard.l
@@ -126,13 +126,13 @@ key_ping.key.alert:key.keyboard.keypad.4
 key_ping.key.mine:key.keyboard.keypad.5
 key_ping.key.look:key.keyboard.keypad.6
 key_ping.key.goto:key.keyboard.keypad.8
-key_key.curios.open.desc:key.keyboard.g
+key_key.curios.open.desc:key.keyboard.unknown
 key_key.moreoverlays.lightoverlay.desc:key.keyboard.f7
 key_key.moreoverlays.chunkbounds.desc:key.keyboard.f9
 key_key.togglecleanview:key.keyboard.unknown
 key_key.clienttweaks.hideOffhandItem:key.keyboard.unknown
 key_key.clienttweaks.disableStepAssist:key.keyboard.unknown
-key_Toggle Brightness:key.keyboard.g
+key_Toggle Brightness:key.keyboard.apostrophe
 key_key.invtweaks_sort_player.desc:key.keyboard.backslash
 key_key.invtweaks_sort_inventory.desc:key.keyboard.grave.accent
 key_key.invtweaks_sort_either.desc:key.mouse.middle
@@ -180,8 +180,8 @@ key_key.jei.previousPage:key.keyboard.page.up
 key_key.jei.nextPage:key.keyboard.page.down
 key_key.jei.bookmark:key.keyboard.a
 key_key.jei.toggleBookmarkOverlay:key.keyboard.unknown
-soundCategory_master:0.0
-soundCategory_music:1.0
+soundCategory_master:1.0
+soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

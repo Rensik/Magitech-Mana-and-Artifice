@@ -16,7 +16,7 @@ claimed_chunks_on_map = true
 #Show your own claimed chunks on the map
 own_claimed_chunks_on_map = true
 #Show waypoints in world
-in_world_waypoints = true
+in_world_waypoints = false
 #Show waypoints in world
 topography_mode = true
 #Enables minimap to show up in corner
@@ -40,11 +40,11 @@ minimap_large_entities = false
 #Show XYZ under minimap
 minimap_xyz = false
 #Show biome under minimap
-minimap_biome = false
+minimap_biome = true
 #Blurs minimap
 minimap_blur = false
 #Adds NWSE compass inside minimap
-minimap_compass = false
+minimap_compass = true
 #Minimap visibility
 #Range: 0 ~ 255
 minimap_visibility = 255

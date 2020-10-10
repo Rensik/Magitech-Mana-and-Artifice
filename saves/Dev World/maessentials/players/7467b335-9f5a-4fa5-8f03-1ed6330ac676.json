@@ -3,11 +3,11 @@
   "username": "Rensik",
   "data": {
     "last_location": {
-      "x": -218.5,
-      "y": 70.0,
-      "z": -163.5,
-      "rotationYaw": -9.149999,
-      "rotationPitch": 21.15,
+      "x": -332.2672946827569,
+      "y": 66.0,
+      "z": -49.30000001192093,
+      "rotationYaw": 55.711895,
+      "rotationPitch": 14.850407,
       "world": {
         "field_110626_a": "minecraft",
         "field_110625_b": "dimension"
@@ -17,8 +17,8 @@
         "field_110625_b": "overworld"
       }
     },
-    "last_death": 1601581006,
-    "death_count": 2,
+    "last_death": 1601905554,
+    "death_count": 3,
     "fly_enabled": false,
     "god_enabled": false
   },

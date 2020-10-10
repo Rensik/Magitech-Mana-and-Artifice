@@ -1,0 +1,15 @@
+{
+  "x": -1848.1157573984651,
+  "y": 71.0,
+  "z": -2244.140303164532,
+  "rotationYaw": 128.20483,
+  "rotationPitch": 16.200071,
+  "world": {
+    "field_110626_a": "minecraft",
+    "field_110625_b": "dimension"
+  },
+  "dimension": {
+    "field_110626_a": "minecraft",
+    "field_110625_b": "overworld"
+  }
+}

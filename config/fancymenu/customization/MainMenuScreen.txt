@@ -6,87 +6,92 @@ customization-meta {
 }
 
 customization {
-  identifier = %id=604382%
-  orientation = bottom-right
-  x = -539
-  action = movebutton
-  y = -44
+  path = C:\Users\Rensik\Downloads\fantasy-4704725_1920.jpg
+  action = texturizebackground
 }
 
 customization {
-  identifier = %id=400382%
-  orientation = bottom-left
-  x = 0
+  identifier = %id=2%
+  orientation = mid-centered
+  x = 214
   action = movebutton
-  y = -20
+  y = -11
 }
 
 customization {
-  identifier = %id=502382%
-  orientation = top-right
-  x = -104
-  action = movebutton
-  y = 8
+  identifier = %id=2%
+  width = 100
+  action = resizebutton
+  height = 20
 }
 
 customization {
-  identifier = %id=376382%
-  orientation = bottom-left
-  x = 101
+  identifier = %id=3%
+  orientation = mid-left
+  x = 534
   action = movebutton
-  y = -20
+  y = 12
 }
 
 customization {
-  identifier = %id=400346%
-  orientation = bottom-left
-  x = 0
-  action = movebutton
-  y = -44
+  identifier = %id=3%
+  width = 100
+  action = resizebutton
+  height = 20
 }
 
 customization {
-  identifier = %id=502346%
+  identifier = %id=4%
   action = hidebutton
 }
 
 customization {
-  identifier = %id=400322%
-  orientation = mid-right
-  x = -100
+  identifier = %id=5%
+  orientation = top-left
+  x = 8
   action = movebutton
-  y = -1
+  y = 298
 }
 
 customization {
-  identifier = %id=400322%
-  width = 100
-  action = resizebutton
-  height = 20
-}
-
-customization {
-  identifier = %id=400298%
-  orientation = mid-right
-  x = -100
+  identifier = %id=6%
+  orientation = top-centered
+  x = -211
   action = movebutton
-  y = -25
+  y = 275
 }
 
 customization {
-  identifier = %id=400298%
-  width = 100
-  action = resizebutton
-  height = 20
+  identifier = %id=7%
+  orientation = mid-left
+  x = 109
+  action = movebutton
+  y = 124
+}
+
+customization {
+  identifier = %id=8%
+  orientation = top-left
+  x = 8
+  action = movebutton
+  y = 275
+}
+
+customization {
+  identifier = %id=9%
+  orientation = top-left
+  x = 8
+  action = movebutton
+  y = 321
 }
 
 customization {
   orientation = mid-right
   buttonaction = openlink
-  x = -100
+  x = -106
   width = 100
   action = addbutton
-  y = 23
+  y = 35
   label = Rent a Server
   value = https://bisecthosting.com/rensanity
   height = 20
@@ -95,10 +100,10 @@ customization {
 customization {
   path = C:/Users/Rensik/Documents/BisectHosting Images/horizontal_light_text.png
   orientation = top-left
-  x = 541
+  x = 535
   width = 98
   action = addtexture
-  y = 221
+  y = 237
   height = 100
 }
 
@@ -106,10 +111,10 @@ customization {
   orientation = top-left
   hoverlabel = 
   buttonaction = openlink
-  x = 540
+  x = 534
   width = 100
   action = addbutton
-  y = 126
+  y = 136
   label = Patreon
   value = http://patreon.com/rensik
   height = 20

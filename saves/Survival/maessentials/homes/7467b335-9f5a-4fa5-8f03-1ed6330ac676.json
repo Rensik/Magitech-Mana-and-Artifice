@@ -1,0 +1,19 @@
+{
+  "homes": {
+    "home": {
+      "x": -2189.447126191994,
+      "y": 65.0,
+      "z": -1678.5797961518042,
+      "rotationYaw": 75.59982,
+      "rotationPitch": 21.149979,
+      "world": {
+        "field_110626_a": "minecraft",
+        "field_110625_b": "dimension"
+      },
+      "dimension": {
+        "field_110626_a": "minecraft",
+        "field_110625_b": "overworld"
+      }
+    }
+  }
+}

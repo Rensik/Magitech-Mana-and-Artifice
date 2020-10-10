@@ -1,0 +1,117 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screen.MainMenuScreen
+  renderorder = foreground
+}
+
+customization {
+  identifier = %id=2%
+  orientation = mid-centered
+  x = 214
+  action = movebutton
+  y = -11
+}
+
+customization {
+  identifier = %id=2%
+  width = 100
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=3%
+  orientation = mid-left
+  x = 534
+  action = movebutton
+  y = 12
+}
+
+customization {
+  identifier = %id=3%
+  width = 100
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=4%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=5%
+  orientation = top-left
+  x = 8
+  action = movebutton
+  y = 298
+}
+
+customization {
+  identifier = %id=6%
+  orientation = top-centered
+  x = -211
+  action = movebutton
+  y = 275
+}
+
+customization {
+  identifier = %id=7%
+  orientation = mid-left
+  x = 109
+  action = movebutton
+  y = 124
+}
+
+customization {
+  identifier = %id=8%
+  orientation = top-left
+  x = 8
+  action = movebutton
+  y = 275
+}
+
+customization {
+  identifier = %id=9%
+  orientation = top-left
+  x = 8
+  action = movebutton
+  y = 321
+}
+
+customization {
+  orientation = mid-right
+  buttonaction = openlink
+  x = -106
+  width = 100
+  action = addbutton
+  y = 35
+  label = Rent a Server
+  value = https://bisecthosting.com/rensanity
+  height = 20
+}
+
+customization {
+  path = C:/Users/Rensik/Documents/BisectHosting Images/horizontal_light_text.png
+  orientation = top-left
+  x = 535
+  width = 98
+  action = addtexture
+  y = 237
+  height = 100
+}
+
+customization {
+  orientation = top-left
+  hoverlabel = 
+  buttonaction = openlink
+  x = 534
+  width = 100
+  action = addbutton
+  y = 140
+  label = Patreon
+  value = http://patreon.com/rensik
+  height = 20
+}
+
