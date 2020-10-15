@@ -1,3 +1,3 @@
-[20:02:45.878][CONSTRUCT][CLIENT][ERROR] BEP recipemanager has a validator but no BEP method
-[20:03:31.816][COMMON_SETUP][CLIENT][INFO] Started loading Scripts for Loader 'setupCommon'!
-[20:03:33.214][COMMON_SETUP][CLIENT][INFO] Finished loading Scripts!
+[16:23:00.107][CONSTRUCT][CLIENT][ERROR] BEP recipemanager has a validator but no BEP method
+[16:23:37.083][COMMON_SETUP][CLIENT][INFO] Started loading Scripts for Loader 'setupCommon'!
+[16:23:38.384][COMMON_SETUP][CLIENT][INFO] Finished loading Scripts!

@@ -5,3 +5,8 @@ some.example.menu.identifier.to.exclude {
   startswith = false
 }
 
+com.mamiyaotaru.voxelmap.gui.GuiAddWaypoint {
+  mode = full
+  startswith = true
+}
+

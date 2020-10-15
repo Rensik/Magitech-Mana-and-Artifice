@@ -11,11 +11,16 @@ customization {
 }
 
 customization {
+  action = setscale
+  scale = 3
+}
+
+customization {
   identifier = %id=2%
   orientation = mid-centered
   x = 214
   action = movebutton
-  y = -11
+  y = -12
 }
 
 customization {
@@ -27,8 +32,8 @@ customization {
 
 customization {
   identifier = %id=3%
-  orientation = mid-left
-  x = 534
+  orientation = mid-centered
+  x = 214
   action = movebutton
   y = 12
 }
@@ -47,51 +52,51 @@ customization {
 
 customization {
   identifier = %id=5%
-  orientation = top-left
-  x = 8
+  orientation = mid-centered
+  x = -312
   action = movebutton
-  y = 298
+  y = 128
 }
 
 customization {
   identifier = %id=6%
-  orientation = top-centered
+  orientation = mid-centered
   x = -211
   action = movebutton
-  y = 275
+  y = 105
 }
 
 customization {
   identifier = %id=7%
-  orientation = mid-left
-  x = 109
+  orientation = mid-centered
+  x = -211
   action = movebutton
-  y = 124
+  y = 128
 }
 
 customization {
   identifier = %id=8%
-  orientation = top-left
-  x = 8
+  orientation = mid-centered
+  x = -312
   action = movebutton
-  y = 275
+  y = 105
 }
 
 customization {
   identifier = %id=9%
-  orientation = top-left
-  x = 8
+  orientation = mid-centered
+  x = -312
   action = movebutton
-  y = 321
+  y = 151
 }
 
 customization {
-  orientation = mid-right
+  orientation = mid-centered
   buttonaction = openlink
-  x = -106
+  x = 214
   width = 100
   action = addbutton
-  y = 35
+  y = 36
   label = Rent a Server
   value = https://bisecthosting.com/rensanity
   height = 20
@@ -99,24 +104,34 @@ customization {
 
 customization {
   path = C:/Users/Rensik/Documents/BisectHosting Images/horizontal_light_text.png
-  orientation = top-left
-  x = 535
+  orientation = mid-centered
+  x = 215
   width = 98
   action = addtexture
-  y = 237
+  y = 56
   height = 100
 }
 
 customization {
-  orientation = top-left
+  orientation = mid-centered
   hoverlabel = 
   buttonaction = openlink
-  x = 534
+  x = 214
   width = 100
   action = addbutton
-  y = 136
+  y = -35
   label = Patreon
   value = http://patreon.com/rensik
   height = 20
+}
+
+customization {
+  path = C:/Users/Rensik/Documents/magitech_logo_3.png
+  orientation = mid-centered
+  x = -228
+  width = 443
+  action = addtexture
+  y = 40
+  height = 79
 }
 

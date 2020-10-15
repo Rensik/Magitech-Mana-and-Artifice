@@ -25,7 +25,7 @@ fovEffectScale:0.0
 gamma:1.0
 renderDistance:32
 entityDistanceScaling:1.0
-guiScale:3
+guiScale:4
 particles:0
 maxFps:260
 difficulty:2
@@ -129,30 +129,23 @@ key_ping.key.goto:key.keyboard.keypad.8
 key_key.curios.open.desc:key.keyboard.unknown
 key_key.moreoverlays.lightoverlay.desc:key.keyboard.f7
 key_key.moreoverlays.chunkbounds.desc:key.keyboard.f9
-key_key.togglecleanview:key.keyboard.unknown
+key_Toggle Brightness:key.keyboard.apostrophe
 key_key.clienttweaks.hideOffhandItem:key.keyboard.unknown
 key_key.clienttweaks.disableStepAssist:key.keyboard.unknown
-key_Toggle Brightness:key.keyboard.apostrophe
 key_key.invtweaks_sort_player.desc:key.keyboard.backslash
 key_key.invtweaks_sort_inventory.desc:key.keyboard.grave.accent
 key_key.invtweaks_sort_either.desc:key.mouse.middle
+key_key.togglecleanview:key.keyboard.unknown
 key_key.openManual:key.keyboard.f1
 key_key.nextDestination:key.keyboard.right.bracket
 key_key.prevDestination:key.keyboard.left.bracket
 key_key.toastcontrol.clear:key.keyboard.unknown
-key_key.spellbookopen:key.keyboard.unknown
 key_doubleslabs.key.toggleVerticalSlabPlacement:key.keyboard.caps.lock
 key_key.refinedstorageaddons.openWirelessCraftingGrid:key.keyboard.g:CONTROL
 key_key.craftingcraft.portable_crafting:key.keyboard.c
 key_key.craftingcraft.back_to_inventory:key.keyboard.unknown
 key_Open sound muffle screen:key.keyboard.unknown
-key_key.minimap.voxelmapmenu:key.keyboard.j
-key_key.minimap.waypointmenu:key.keyboard.unknown
-key_key.minimap.zoom:key.keyboard.z
-key_key.minimap.togglefullscreen:key.keyboard.x
-key_key.minimap.waypointhotkey:key.keyboard.b
-key_key.minimap.togglemobs:key.keyboard.unknown
-key_key.minimap.toggleingamewaypoints:key.keyboard.unknown
+key_key.spellbookopen:key.keyboard.unknown
 key_key.gravelminer.toggle:key.keyboard.unknown
 key_key.craftingtweaks.rotate:key.keyboard.unknown
 key_key.craftingtweaks.rotate_counter_clockwise:key.keyboard.unknown
